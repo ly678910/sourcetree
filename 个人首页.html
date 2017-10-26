@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+<title>我的首页</title>
+<style>
+*{margin:0;padding:0;}
+#bg {
+		-moz-animation: bg 70s linear infinite;
+		-webkit-animation: bg 70s linear infinite;
+		-ms-animation: bg 70s linear infinite;
+		animation: bg 70s linear infinite;
+		-moz-backface-visibility: hidden;
+		-webkit-backface-visibility: hidden;
+		-ms-backface-visibility: hidden;
+		backface-visibility: hidden;
+		
+	/* Set your background with this */
+
+		background: #348cb2 url("image/太空漫步2.png") 0px 0px;
+		background-repeat: repeat-x;
+		height:100%;
+		left: 0;top: 0;
+		opacity: 1;
+		position:fixed;
+		background-size:4000px 100%;
+		width:8000px;
+	}
+
+	
+
+	@-webkit-keyframes bg {
+		100% {
+			-moz-transform: translate3d(-4000px,0,0);
+			-webkit-transform: translate3d(-4000px,0,0);
+			-ms-transform: translate3d(-4000px,0,0);
+			transform: translate3d(-4000px,0,0);
+		}
+	}
+
+	
+	
+@font-face{
+           font-family: myFirstFont;
+	       src:url(字体/方正硬笔行书.ttf);
+		  }   
+span{ font-family:myFirstFont;}
+#main{font-family:myFirstFont;}
+
+#main{position:relative;}
+#main h1{font-size:60px;color:white;}
+#main ul{list-style:none;float:left;color:white;display:block;width:240px;text-align:center;}
+#main span{display:block;float:right;width:20px;}
+#main .m_left{margin:100px auto 0 auto;width:500px;}
+#main .m_left ul li{font-size:40px;margin-top:30px;}
+#main .m_lz1{display:block;position:relative;right:180px;top:40px;font-size:25px;font-weight:bolder;color:white;}
+#main .m_lz2{display:block;position:relative;right:200px;top:-40px;font-size:25px;font-weight:bolder;color:white;}
+a{text-decoration:none;color:white;}
+a:hover{color:#f60;}
+</style>
+</head>
+<body>
+  <div id="bg"></div> 
+  <div id="main"> 
+     <div class="m_left">
+  <h1 class="bt">我的首页</h1>
+		<ul><li><a href="个人网站.html#jl" target="_blank">个人简历</a></li>
+		    <li><a href="个人网站.html#zp" target="_blank">个人作品</a></li>
+			<li><a href="个人网站.html#xq" target="_blank">兴趣爱好</a></li>
+			<li><a href="个人网站.html#xq" target="_blank">联系方式</a></li>
+		</ul></div>
+		
+		<span class="m_lz1">老当益壮宁移白首之心</span>
+		<span class="m_lz2">穷且益艰不坠青云之志</span>
+	</div>
+ 
+</body>
+</html>
